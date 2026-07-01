@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+<h1>Sobre el sistema</h1>
+
+<p class="subtitle">
+    Sistema de Gestión de Estudiantes desarrollado con Flask y PostgreSQL.
+</p>
+
+<div class="about-card">
+
+    <h2>Descripción del sistema</h2>
+
+    <p>
+        Aplicación web CRUD desarrollada para la gestión de estudiantes,
+        permitiendo registrar, editar, eliminar y buscar información
+        académica mediante una interfaz moderna y responsive.
+    </p>
+
+    <p>
+        El sistema fue diseñado con enfoque en experiencia de usuario,
+        validaciones de datos y organización eficiente de la información.
+    </p>
+
+    <h2>Funciones implementadas</h2>
+
+    <ul>
+        <li>Registro de estudiantes</li>
+        <li>Edición y eliminación de datos</li>
+        <li>Búsqueda avanzada por múltiples campos</li>
+        <li>Ordenamiento dinámico de registros</li>
+        <li>Validaciones frontend y backend</li>
+        <li>Mensajes interactivos del sistema</li>
+        <li>Diseño responsive con estilo futurista</li>
+    </ul>
+
+    <h2>Tecnologías utilizadas</h2>
+
+    <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>PostgreSQL</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Docker</li>
+        <li>pgAdmin</li>
+    </ul>
+
+    <h3>
+        El sistema fue desarrollado por el estudiante Franco Esquivel
+    </h3>
+</div>
+
+<div class="actions">
+    <a class="btn secondary" href="{{ url_for('index') }}">
+        Volver al inicio
+    </a>
+</div>
+
+{% endblock %}
